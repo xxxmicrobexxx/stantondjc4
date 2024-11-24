@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<MixxxControllerPreset mixxxVersion="2.2.3.1" schemaVersion="1">
+<MixxxControllerPreset mixxxVersion="2.4.1" schemaVersion="1">
     <info>
-        <name>Stanton DJC.4</name>
+        <name>Stanton DJC 4</name>
         <author>Martin Bruset Solberg, Christoph Zimmermann, Steve Davis</author>
         <description>The Stanton DJC.4 is a 4 deck controller with large, touch-sensitive jog wheels and a built-in audio interface (2 inputs, 2 outputs). It features 4 FX units and a master VU meter.</description>
-    </info>
+		<version>1.0.0</version>
+	</info>
     <controller id="DJC-4">
         <scriptfiles>
-            <file filename="lodash.mixxx.js" functionprefix=""/>
-            <file filename="midi-components-0.0.js" functionprefix=""/>
-            <file filename="Stanton-DJC-4-scripts.js" functionprefix="DJC4"/>
+            <file functionprefix="" filename="lodash.mixxx.js"/>
+            <file functionprefix="" filename="midi-components-0.0.js"/>
+            <file functionprefix="DJC4" filename="Stanton-DJC-4-scripts.js"/>
         </scriptfiles>
         <controls>
             <control>
@@ -1111,13 +1112,12 @@
                 </options>
             </control>
             <control>
-                <group>[AutoDJ]</group>
-                <key>fade_now</key>
-                <description>MIDI Learned from 2 messages.</description>
+                <group>[Channel1]</group>
+                <key>DJC4.deck[0].toggleScratchMode</key>
                 <status>0x90</status>
                 <midino>0x15</midino>
                 <options>
-                    <normal/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
@@ -1409,13 +1409,12 @@
                 </options>
             </control>
             <control>
-                <group>[Channel2]</group>
-                <key>beatloop_activate</key>
-                <description>MIDI Learned from 2 messages.</description>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>DJC4.effectUnit[1].effectFocusButton.input</key>
                 <status>0x91</status>
                 <midino>0x1D</midino>
                 <options>
-                    <normal/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
@@ -1770,13 +1769,13 @@
                 </options>
             </control>
             <control>
-                <group>[Library]</group>
-                <key>GoToItem</key>
-                <description>MIDI Learned from 1 messages.</description>
+                <group>[AutoDJ]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 2 messages.</description>
                 <status>0x90</status>
                 <midino>0x28</midino>
                 <options>
-                    <switch/>
+                    <normal/>
                 </options>
             </control>
             <control>
@@ -1784,6 +1783,15 @@
                 <key>DJC4.browseEncoder.input</key>
                 <status>0xB0</status>
                 <midino>0x2C</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>DJC4.shiftButton</key>
+                <status>0x90</status>
+                <midino>0x2D</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -2293,26 +2301,6 @@
                 </options>
             </control>
             <control>
-                <group>[AutoDJ]</group>
-                <key>enabled</key>
-                <description>MIDI Learned from 3 messages.</description>
-                <status>0x90</status>
-                <midino>0x47</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[AutoDJ]</group>
-                <key>fade_now</key>
-                <description>MIDI Learned from 3 messages.</description>
-                <status>0x91</status>
-                <midino>0x47</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
                 <group>[Channel1]</group>
                 <key>cue_gotoandstop</key>
                 <status>0x90</status>
@@ -2430,12 +2418,13 @@
                 </options>
             </control>
             <control>
-                <group>[EffectRack1_EffectUnit1]</group>
-                <key>DJC4.effectUnit[1].effectFocusButton.input</key>
+                <group>[Channel2]</group>
+                <key>beatlooproll_activate</key>
+                <description>MIDI Learned from 2 messages.</description>
                 <status>0x91</status>
                 <midino>0x4F</midino>
                 <options>
-                    <script-binding/>
+                    <normal/>
                 </options>
             </control>
             <control>
@@ -2641,16 +2630,6 @@
                 <key>show_maximized_library</key>
                 <status>0x90</status>
                 <midino>0x59</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[AutoDJ]</group>
-                <key>enabled</key>
-                <description>MIDI Learned from 3 messages.</description>
-                <status>0x90</status>
-                <midino>0x5A</midino>
                 <options>
                     <normal/>
                 </options>
