@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<MixxxControllerPreset mixxxVersion="2.2.3" schemaVersion="1">
+<MixxxControllerPreset mixxxVersion="2.2.3.1" schemaVersion="1">
     <info>
         <name>Stanton DJC.4</name>
         <author>Martin Bruset Solberg, Christoph Zimmermann, Steve Davis</author>
@@ -1784,15 +1784,6 @@
                 <key>DJC4.browseEncoder.input</key>
                 <status>0xB0</status>
                 <midino>0x2C</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Master]</group>
-                <key>DJC4.shiftButton</key>
-                <status>0x90</status>
-                <midino>0x2D</midino>
                 <options>
                     <script-binding/>
                 </options>
