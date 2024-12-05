@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <MixxxControllerPreset mixxxVersion="2.4.1" schemaVersion="1">
     <info>
-        <name>Stanton DJC 4</name>
+        <name>Stanton DJC 4 - custom</name>
         <author>Martin Bruset Solberg, Christoph Zimmermann, Steve Davis</author>
         <description>The Stanton DJC.4 is a 4 deck controller with large, touch-sensitive jog wheels and a built-in audio interface (2 inputs, 2 outputs). It features 4 FX units and a master VU meter.</description>
-		<version>1.0.0</version>
-	</info>
+    </info>
     <controller id="DJC-4">
         <scriptfiles>
             <file functionprefix="" filename="lodash.mixxx.js"/>
@@ -1770,7 +1769,7 @@
             </control>
             <control>
                 <group>[AutoDJ]</group>
-                <key>enabled</key>
+                <key>fade_now</key>
                 <description>MIDI Learned from 2 messages.</description>
                 <status>0x90</status>
                 <midino>0x28</midino>
@@ -2635,6 +2634,16 @@
                 </options>
             </control>
             <control>
+                <group>[AutoDJ]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 3 messages.</description>
+                <status>0x90</status>
+                <midino>0x5A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel1]</group>
                 <key>rate</key>
                 <status>0xE0</status>
@@ -2763,8 +2772,8 @@
                 <group>[Channel1]</group>
                 <key>play_indicator</key>
                 <status>0x90</status>
-                <midino>0x16</midino>
-                <minimum>0.5</minimum>
+                <midino>0x22</midino>
+                <maximum>0.5</maximum>
             </output>
             <output>
                 <group>[Channel1]</group>
@@ -2777,8 +2786,8 @@
                 <group>[Channel1]</group>
                 <key>play_indicator</key>
                 <status>0x90</status>
-                <midino>0x22</midino>
-                <maximum>0.5</maximum>
+                <midino>0x16</midino>
+                <minimum>0.5</minimum>
             </output>
             <output>
                 <group>[Channel1]</group>
@@ -2883,20 +2892,6 @@
                 <key>pfl</key>
                 <status>0x91</status>
                 <midino>0x1C</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>play_indicator</key>
-                <status>0x91</status>
-                <midino>0x16</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>play_indicator</key>
-                <status>0x91</status>
-                <midino>0x18</midino>
                 <minimum>0.5</minimum>
             </output>
             <output>
@@ -2908,6 +2903,20 @@
             </output>
             <output>
                 <group>[Channel2]</group>
+                <key>play_indicator</key>
+                <status>0x91</status>
+                <midino>0x18</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>play_indicator</key>
+                <status>0x91</status>
+                <midino>0x16</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
                 <key>rate_temp_down</key>
                 <status>0x91</status>
                 <midino>0x13</midino>
@@ -3015,8 +3024,8 @@
                 <group>[Channel3]</group>
                 <key>play_indicator</key>
                 <status>0x92</status>
-                <midino>0x16</midino>
-                <minimum>0.5</minimum>
+                <midino>0x22</midino>
+                <maximum>0.5</maximum>
             </output>
             <output>
                 <group>[Channel3]</group>
@@ -3029,8 +3038,8 @@
                 <group>[Channel3]</group>
                 <key>play_indicator</key>
                 <status>0x92</status>
-                <midino>0x22</midino>
-                <maximum>0.5</maximum>
+                <midino>0x16</midino>
+                <minimum>0.5</minimum>
             </output>
             <output>
                 <group>[Channel3]</group>
@@ -3141,8 +3150,8 @@
                 <group>[Channel4]</group>
                 <key>play_indicator</key>
                 <status>0x93</status>
-                <midino>0x16</midino>
-                <minimum>0.5</minimum>
+                <midino>0x23</midino>
+                <maximum>0.5</maximum>
             </output>
             <output>
                 <group>[Channel4]</group>
@@ -3155,8 +3164,8 @@
                 <group>[Channel4]</group>
                 <key>play_indicator</key>
                 <status>0x93</status>
-                <midino>0x23</midino>
-                <maximum>0.5</maximum>
+                <midino>0x16</midino>
+                <minimum>0.5</minimum>
             </output>
             <output>
                 <group>[Channel4]</group>
