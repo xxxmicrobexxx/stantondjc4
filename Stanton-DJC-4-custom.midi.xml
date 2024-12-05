@@ -1770,7 +1770,7 @@
             <control>
                 <group>[AutoDJ]</group>
                 <key>fade_now</key>
-                <description>MIDI Learned from 2 messages.</description>
+                <description>X fade with TX/FX button</description>
                 <status>0x90</status>
                 <midino>0x28</midino>
                 <options>
@@ -2419,7 +2419,7 @@
             <control>
                 <group>[Channel2]</group>
                 <key>beatlooproll_activate</key>
-                <description>MIDI Learned from 2 messages.</description>
+                <description></description>
                 <status>0x91</status>
                 <midino>0x4F</midino>
                 <options>
@@ -2636,7 +2636,7 @@
             <control>
                 <group>[AutoDJ]</group>
                 <key>enabled</key>
-                <description>MIDI Learned from 3 messages.</description>
+                <description>Toggle AutoDJ with shift + TX/FX</description>
                 <status>0x90</status>
                 <midino>0x5A</midino>
                 <options>
